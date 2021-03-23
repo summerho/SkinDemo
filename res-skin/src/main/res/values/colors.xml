@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="root_view_bg_color">#CC292828</color>
+    <color name="root_view_bg_color">#292828</color>
     <color name="zhishu_bg_color">#E6094A03</color>
     <color name="bang_bg_color">#E6043362</color>
     <color name="change_skin_btn_bg_color">#E67A0404</color>
