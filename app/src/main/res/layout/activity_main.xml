@@ -75,7 +75,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@color/change_skin_btn_bg_color"
-        android:textColor="#333333"
+        android:textColor="@color/text_color"
         android:textSize="16dp"
         android:text="切换皮肤"/>
 

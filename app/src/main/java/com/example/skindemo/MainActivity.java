@@ -25,21 +25,6 @@ public class MainActivity extends BaseActivity {
         mTv3 = findViewById(R.id.tv3);
         mSkinView = findViewById(R.id.skin_view);
         mBtn = findViewById(R.id.change_skin_btn);
-        changeSkin();
         mBtn.setOnClickListener(view -> SkinConfigManager.getInstance().changeSkin());
-    }
-
-    @Override
-    public void changeSkin() {
-        mRootView.setBackgroundColor(getResources().getColor(R.color.root_view_bg_color));
-        mTv1.setBackgroundColor(getResources().getColor(R.color.zhishu_bg_color));
-        mTv2.setBackgroundColor(getResources().getColor(R.color.zhishu_bg_color));
-        mTv3.setBackgroundColor(getResources().getColor(R.color.zhishu_bg_color));
-        mTv1.setTextColor(getResources().getColor(R.color.text_color));
-        mTv2.setTextColor(getResources().getColor(R.color.text_color));
-        mTv3.setTextColor(getResources().getColor(R.color.text_color));
-        mSkinView.changeSkin();
-        mBtn.setBackgroundColor(getResources().getColor(R.color.change_skin_btn_bg_color));
-        mBtn.setTextColor(getResources().getColor(R.color.text_color));
     }
 }

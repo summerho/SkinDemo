@@ -5,9 +5,11 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.LayoutInflaterCompat;
 
 import com.example.skindemo.skin.SkinChangeEvent;
 import com.example.skindemo.skin.SkinConfigManager;
+import com.example.skindemo.skin.SkinFactory;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -15,8 +17,12 @@ import org.greenrobot.eventbus.ThreadMode;
 
 public class BaseActivity extends AppCompatActivity {
 
+    private SkinFactory mSkinFactory;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        mSkinFactory = new SkinFactory();
+        LayoutInflaterCompat.setFactory(getLayoutInflater(), mSkinFactory);
         super.onCreate(savedInstanceState);
         if (getSupportActionBar() != null){
             getSupportActionBar().hide();
@@ -40,6 +46,6 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void changeSkin() {
-        // 子类实现
+        mSkinFactory.apply();
     }
 }
