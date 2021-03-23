@@ -32,7 +32,7 @@ public class SkinConfigManager {
      */
     private static final String KEY_CURRENT_SKIN_MODE = "current_skin_mode";
 
-    private static final String NIGHT_SKIN_RESOURCE_NAME = "night_skin_resource.apk";
+    private static final String NIGHT_SKIN_RESOURCE_NAME = "night_skin_resource.skin";
 
     private static final String ASSETS_PRE_SET_NIGHT_NAME = "skin/" + NIGHT_SKIN_RESOURCE_NAME;
 

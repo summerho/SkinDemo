@@ -13,4 +13,5 @@
     <color name="bang_bg_color">#FFCEDEEE</color>
     <color name="change_skin_btn_bg_color">#F1B0AB</color>
     <color name="text_color">#333333</color>
+    <color name="round_corner_bg_color">#78FFEB3B</color>
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.LayoutInflaterCompat;
+import androidx.fragment.app.Fragment;
 
 import com.example.skindemo.skin.SkinChangeEvent;
 import com.example.skindemo.skin.SkinConfigManager;
@@ -47,5 +48,11 @@ public class BaseActivity extends AppCompatActivity {
 
     public void changeSkin() {
         mSkinFactory.apply();
+    }
+
+    public void addFragment(int container, Fragment fragment, String tag) {
+        if (null != fragment && !fragment.isAdded())
+            getSupportFragmentManager().beginTransaction().add(container, fragment,
+                    tag).commitAllowingStateLoss();
     }
 }

@@ -10,7 +10,6 @@
         android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:orientation="horizontal">
 
         <TextView
@@ -60,7 +59,33 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/ll"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/skin_view"
+        android:layout_above="@+id/change_skin_btn"/>
+
+    <TextView
+        android:id="@+id/open_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/change_skin_btn_bg_color"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        android:text="打开Activity"/>
 
     <TextView
         android:id="@+id/change_skin_btn"
