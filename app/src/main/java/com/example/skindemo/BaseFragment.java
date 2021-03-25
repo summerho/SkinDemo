@@ -14,13 +14,13 @@ public class BaseFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    @NonNull
-    @Override
-    public LayoutInflater onGetLayoutInflater(@Nullable Bundle savedInstanceState) {
-        if (getActivity() != null) {
-            return getActivity().getLayoutInflater();
-        } else {
-            return super.onGetLayoutInflater(savedInstanceState);
-        }
-    }
+//    @NonNull
+//    @Override
+//    public LayoutInflater onGetLayoutInflater(@Nullable Bundle savedInstanceState) {
+//        if (getActivity() != null) {
+//            return getActivity().getLayoutInflater();
+//        } else {
+//            return super.onGetLayoutInflater(savedInstanceState);
+//        }
+//    }
 }
