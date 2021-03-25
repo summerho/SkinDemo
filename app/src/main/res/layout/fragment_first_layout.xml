@@ -27,8 +27,21 @@
         android:paddingBottom="10dp"
         android:layout_centerInParent="true"
         android:background="@color/bang_bg_color"
+        android:drawableLeft="@drawable/comment_zan_done"
+        android:drawableEnd="@drawable/comment_zan_done"
+        android:drawableTop="@drawable/comment_zan_done"
+        android:drawableBottom="@drawable/comment_zan_done"
+        android:drawablePadding="10dp"
         android:textColor="@color/text_color"
         android:textSize="16dp"
         android:text="深港通"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/share_menu_wx_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv2"/>
 
 </RelativeLayout>

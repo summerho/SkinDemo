@@ -66,7 +66,10 @@ public class SkinFactory implements LayoutInflaterFactory {
     }
 
     private boolean isSupportedAttr(String attributeName) {
-        return "background".equals(attributeName) || "textColor".equals(attributeName);
+        return "background".equals(attributeName) || "src".equals(attributeName) || "textColor".equals(attributeName)
+                || "drawableLeft".equals(attributeName) || "drawableStart".equals(attributeName)
+                || "drawableRight".equals(attributeName) || "drawableEnd".equals(attributeName)
+                || "drawableTop".equals(attributeName) || "drawableBottom".equals(attributeName);
     }
 
     public void apply() {
