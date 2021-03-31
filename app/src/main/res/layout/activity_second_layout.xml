@@ -13,6 +13,7 @@
         android:background="@drawable/round_corner_bg">
 
         <TextView
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingStart="15dp"
@@ -23,7 +24,7 @@
             android:background="@color/change_skin_btn_bg_color"
             android:textColor="@color/text_color"
             android:textSize="16dp"
-            android:text="沪港通"/>
+            android:text="切换皮肤"/>
 
     </RelativeLayout>
 

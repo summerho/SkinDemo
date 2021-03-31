@@ -14,4 +14,6 @@
     <color name="change_skin_btn_bg_color">#F1B0AB</color>
     <color name="text_color">#333333</color>
     <color name="round_corner_bg_color">#78FFEB3B</color>
+    <color name="item_view_bg_color">#D7CEE7</color>
+    <color name="item_divider_color">#f6f6f6</color>
 </resources>
