@@ -6,10 +6,12 @@
     android:id="@+id/root_view"
     android:background="@color/root_view_bg_color">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rl"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:background="@drawable/round_corner_bg">
 
         <TextView
@@ -20,13 +22,26 @@
             android:paddingEnd="15dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:layout_centerInParent="true"
             android:background="@color/change_skin_btn_bg_color"
             android:textColor="@color/text_color"
             android:textSize="16dp"
             android:text="切换皮肤"/>
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/change_skin_btn_bg_color"
+            android:textColor="@color/text_color"
+            android:textSize="16dp"
+            android:text="动态添加view"/>
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/container"

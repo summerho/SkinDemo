@@ -11,6 +11,7 @@ public class SkinView extends LinearLayout {
 
     public SkinView(Context context) {
         super(context);
+        intView(context);
     }
 
     public SkinView(Context context, @Nullable AttributeSet attrs) {
